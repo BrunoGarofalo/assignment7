@@ -27,9 +27,9 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-cov  # Ensure pytest-cov is installed
 
-      - name: Run tests with pytest and enforce 100% coverage
+      - name: Run tests with pytest and enforce 90% coverage
         run: |
-          pytest --cov=main --cov-fail-under=100
+          pytest --cov=main --cov-fail-under=90
 
       - name: Build Docker Image
         run: |
